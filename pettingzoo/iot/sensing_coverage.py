@@ -9,6 +9,7 @@ class parallel_env(ParallelEnv):
         self.max_sensing_range = max_sensing_range
 
     def render(self, mode="human"):
+        # TODO add some graphic lib
         print(self.env.get_covered_area())
         print(self.env.get_sensing_coverage())
 
